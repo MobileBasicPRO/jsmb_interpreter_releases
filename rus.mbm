@@ -1,0 +1,132 @@
+
+// ==================JsMobileBasic Library================= *
+var MB_RUS = {
+    name: 'Руссификатор для JsMobileBasic',
+    author: 'PROPHESSOR',
+    version: '1.0',
+    description: 'Библиотека руссификации для JsMobileBasic',
+    url: 'http://prophessor.16mb.com'
+}
+// ==================JsMobileBasic Library================= *
+
+//=== Константы ===//
+const ПИ = PI;
+
+
+//=== Операторы ===//
+
+//Графические
+очиститьЭкран = cls;
+задатьЦвет = setColor;
+задатьТолщинуЛиний = setLineWidth;
+залитьКвадрат = fillRect;
+рисоватьКвадрат = drawRect;
+залитьЭкран = fillScreen;
+стеретьОбласть = clearRect;
+рисоватьЛинию = drawLine;
+рисоватьОкружность = drawArc;
+рисоватьТочку = drawPlot;
+залитьОкружность = fillArc;
+загрузитьГель = gelLoad;
+рисоватьГель = drawGel;
+рисоватьТекст = drawString;
+задатьРазмерШрифта = setFontSize;
+задатьШрифт = setFont;
+рисовать4Угольник = drawRect4;
+залить4Угольник = fillRect4;
+рисоватьТреугольник = drawTriangle;
+залитьТреугольник = fillTriangle;
+линейныйГрадиент = makeLinearGradient;
+радиальныйГрадиент = makeRadialGradient;
+текстура = makeTexture;
+
+вывести = println;
+ввести = input;
+дебаг = отладка = debug;
+лог = log;
+выход = exit;
+
+
+игратьЗвук = playSound;
+остановитьЗвук = pauseSound;
+
+//Math
+корень = sqrt;
+модуль = abs;
+рандом = random;
+синус = sin;
+косинус = cos;
+тангенс = tan;
+котангенс = ctg;
+арксинус = asin;
+арккосинус = acos;
+арктангенс = atan;
+остаток = mod;
+логарифм = log;
+експонента = exp;
+степень = pow;
+ограничить = limit;
+минимум = min;
+максимум = max;
+радианы = rad;
+градусы = deg;
+
+
+//Строки
+
+длина = len;
+вСтроку = str;
+вЧисло = val;
+верхнийРегистр = upper;
+нижнийРегистр = lower;
+вырезать = mid;
+символ = chr;
+кодСимвола = asc;
+разбить = split;
+заменить = replace;
+вДробь = float;
+
+//System
+
+подключить = include;
+
+//Значения
+ширинаЭкрана = screenWidth;
+высотаЭкрана = screenHeight;
+получитьХмыши = getMouseX;
+получитьУмыши = getMouseY;
+получитьКоличествоКликов = getLeftClicksCount;
+получитьКоличествоПравыхКликов = getRightClicksCount;
+получитьИмяМодуля = getModuleName;
+получитьАвтораМодуля = getModuleAuthor;
+получитьОписаниеМодуля = getModuleDescription;
+получитьСтраницуМодуля = getModuleUrl;
+получитьВерсиюМодуля = getModuleVersion;
+
+
+//Интерфейс
+
+менюДобавить = menuAdd;
+менюДобавитьРазделитель = menuAddSeparator;
+менюБарДобавить = menuBarAdd;
+менюОтобразить = menuShow;
+менюБарОтобразить = menuBarShow;
+менюТрейДобавить = menuTrayAdd;
+
+буферОбмена = getClipboard;
+задатьБуферОбмена = setClipboard;
+очиститьБуферОбмена = clearClipboard;
+
+//Файлы
+/*
+сохранитьДанные = saveData;
+загрузитьДанные = readData;
+локальноСохранитьДанные = localSaveData;
+локальноЗагрузитьДанные = localReadData;
+
+выполнить = exec;
+выполнитьФайл = execFile;
+*/
+полныйЭкран = fullScreen;
+
+console.info('Руссификатор операторов загружен!');

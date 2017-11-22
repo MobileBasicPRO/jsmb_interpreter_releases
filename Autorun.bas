@@ -1,0 +1,4 @@
+// ==================JsMobileBasic Script================= *
+
+
+function Main(){}

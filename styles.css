@@ -1,0 +1,272 @@
+/*
+html{
+    height: 100%;
+}
+*/
+
+
+/*Non Select*/
+
+button,
+h1,
+h2,
+h3,
+input,
+label {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+/*===*/
+
+.background {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(32, 0, 0);
+    background: -moz-linear-gradient(90deg, #000000 0%, #5f0000 100%);
+    background: -webkit-gradient(linear, 90deg, color-stop(0%, #000000), color-stop(100%, #5f0000));
+    background: -webkit-linear-gradient(90deg, #000000 0%, #5f0000 100%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.canvas {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    /* position: relative; */  /* FIXME: */
+}
+
+.page {
+    margin-top: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 50px;
+    border: 3px solid gray;
+    background-color: black;
+}
+
+.buttons {
+    text-align: center;
+}
+
+#code {
+    width: 98%;
+    height: 15vh;
+}
+
+h1 {
+    text-align: center;
+    font-family: monospace;
+    font-size: 333%;
+    color: yellowgreen;
+}
+
+right {
+    position: relative;
+    right: 0px;
+    text-align: right;
+}
+
+canvas {
+    display: block;
+    /*    margin-left: 75px;*/
+    /*height: 55vh;*/
+    align-self: center;
+}
+
+#p {
+    /*position: absolute;
+    top: 0;
+    left: 0;*/
+    /*height:100%;*/
+}
+
+
+/*Floating Settings*/
+
+.revative {
+    position: relative;
+    z-index: 100;
+}
+
+#settings {
+    position: fixed;
+    z-index: 100;
+    top: 25%;
+    left: 15%;
+    width: 500px;
+    height: 300px;
+    border: 3px solid gray;
+    background-color: black;
+}
+
+.X {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+    background: gray;
+    border-color: black;
+}
+
+section {
+    background: #222 !important;
+    transition:all 0.5s ease;
+}
+
+#sconsole {
+    position: fixed;
+    z-index: 100;
+    top: 25%;
+    left: 15%;
+    width: 500px;
+    height: 300px;
+    border: 3px solid gray;
+    background-color: black;
+}
+
+#console {
+    border: 1px solid darkolivegreen;
+    overflow: overlay;
+    height: 230px;
+}
+
+.inputs {
+    color: green;
+}
+
+.field {
+    clear: both;
+    text-align: right;
+    padding: 7px;
+}
+
+label {
+    float: left;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.btn-bar {
+    width: 20%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+}
+
+button[active="error"] {
+    /* background: red; */
+    /* -webkit-animation: errblink 1s linear infinite; */
+    /* -moz-animation: errblink .5s linear infinite; */
+    animation: errblink 1s linear infinite;
+}
+
+button[active="log"] {
+    /* background: red; */
+    /* -webkit-animation: errblink 1s linear infinite; */
+    /* -moz-animation: errblink .5s linear infinite; */
+    animation: logblink 1s linear infinite;
+}
+
+@keyframes errblink {
+    0%,
+    100% {
+        background: whitesmoke;
+    }
+    50% {
+        background: red;
+    }
+}
+
+@keyframes logblink {
+    0%,
+    100% {
+        background: whitesmoke;
+    }
+    50% {
+        background: blue;
+    }
+}
+
+
+/* 
+@-webkit-keyframes blink {
+    0% {
+        color: red;
+    }
+    100% {
+        color: black;
+    }
+} */
+
+.blink {
+    -webkit-animation: blink 1s linear infinite;
+    -moz-animation: blink 1s linear infinite;
+    animation: blink 1s linear infinite;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background: rgba(0, 32, 0, .5);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    background: green;
+}
+
+
+/* Colors */
+
+blue {
+    color: blue;
+}
+
+lblue{
+    color: lightblue;
+}
+
+cyan{
+    color: cyan;
+}
+
+red {
+    color: red;
+}
+
+yellow {
+    color: yellow;
+}
+
+orange {
+    color: orange;
+}
+
+green {
+    color: #0f0;
+}
+
+dgreen {
+    color: green;
+}
+
+gray {
+    color: gray;
+}

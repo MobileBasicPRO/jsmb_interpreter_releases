@@ -1,0 +1,3 @@
+ES5 => ES6
+Object style
+Console errors, warns and logs

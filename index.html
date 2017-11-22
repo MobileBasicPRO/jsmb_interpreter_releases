@@ -1,0 +1,110 @@
+<!Doctype HTML>
+<html id="html">
+
+<head>
+    <title>Интерпретатор MobileBasic'a</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!---->
+
+    <section id="settings" style="display: none;">
+        <div class="relative">
+            <button class="X" onclick="Fader.fadeOut('settings');">X</button>
+            <form class="inputs">
+                <h2>Подключаемые библиотеки:</h2>
+                <div class="field">
+                    <label for="rus">Руссификатор операторов</label>
+                    <input type="checkbox" id="rus"><br/>
+                </div>
+                <div class="field">
+                    <label for="ukr">Украинизатор операторов</label>
+                    <input type="checkbox" id="ukr"><br/>
+                </div>
+                <button style="width:100%;" onclick="Interpreter.Settings.save(); return 0;">Save</button>
+            </form>
+
+        </div>
+    </section>
+
+    <section id="sconsole" style="display: none;">
+        <div class="relative">
+            <button class="X" onclick="Fader.fadeOut('sconsole');">X</button>
+            <div class="inputs">
+                <h2>Консоль отладки:</h2>
+                <div id="console"></div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!---->
+    <link rel="stylesheet" href="cm/lib/codemirror.css">
+    <link rel="stylesheet" href="cm/theme/cobalt.css">
+    <!-- <link rel="stylesheet" href="cm/theme/erlang-dark.css"> -->
+    <link rel="stylesheet" href="cm/addon/hint/show-hint.css">
+
+    <script src="cm/lib/codemirror.js"></script>
+    <script src="cm/lib/codemirror.js"></script>
+    <script src="cm/mode/javascript/javascript.js"></script>
+    <script src="cm/mode/css/css.js"></script>
+    <script src="cm/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="cm/addon/edit/matchbrackets.js"></script>
+    <script src="cm/addon/comment/continuecomment.js"></script>
+    <script src="cm/addon/comment/comment.js"></script>
+    <script src="cm/addon/edit/closebrackets.js"></script>
+<p id="p" style="display: none;"></p>
+</head>
+
+<body>
+    <div class="background" id="bg">
+        <div class="page" id="page">
+            <h1>Интерпретатор JsMobileBasic</h1>
+            <div class="code">
+                <textarea id="code">
+fillScreen( //Залить экран
+    rgb( //Цветом со
+        random(0,255), //Случайным значением красного
+        random(0,255), //Случайным значением зеленого
+        random(0,255)  //Случайным значением синего
+    )
+);</textarea><br/>
+                <!-- <script src=>
+                    
+                </script> -->
+            </div>
+            <div class="buttons">
+                <button onclick="Interpreter.execute()" class="btn-bar">Выполнить!</button>
+                <button onclick="if(confirm('Перезагрузить? Это удалит весь код и сбросит программу!')) location.reload()" class="btn-bar">Перезагрузка</button>
+                <button onclick="Interpreter.Settings.show()" class="btn-bar">Настройки</button>
+                <button onclick="Interpreter.Console.show()" id="consolebtn" class="btn-bar">Консоль</button>
+                <button onclick="window.close()" class="btn-bar">Выход</button>
+            </div>
+            <div class="canvas">
+                <!-- <div id="p" style="color:gray;position:absolute;top:0;left:0;margin-top:10px;"></div> -->
+                <canvas id="c">Для запуска JsMobileBasic приложений требуется браузер, поддерживающий canvas!</canvas>
+            </div>
+        </div>
+    </div>
+    <div id="audio">
+        <audio id="player0">Для запуска приложений JsMobileBasic требуется браузер, поддерживающий аудио!</audio>
+    </div>
+    <script src="ustrs.js"></script>
+    <script src="Config.js"></script>
+    <script src="MobileBasic.dll"></script>
+    <script src="script.js"></script>
+    <script>
+        Interpreter.Settings.load();
+    </script>
+    
+    <!---->
+    <script src="cm/addon/hint/show-hint.js"></script>
+    <script src="cm/addon/hint/javascript-hint.js"></script>
+    <!---->
+    <script src="Autorun.bas" type="text/javascript"></script>
+    <script>
+        Interpreter.init();
+    </script>
+</body>
+
+</html>

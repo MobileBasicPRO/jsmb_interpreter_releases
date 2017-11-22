@@ -1,0 +1,20 @@
+{
+    "webexe_settings": {
+        "blacklist": "",
+        "custom_script": "",
+        "download_dir": "/home/prophessor/Programs/Web2ExeLinux/nw",
+        "export_dir": "output",
+        "force_download": false,
+        "linux-x32": true,
+        "linux-x64": true,
+        "mac-x64": false,
+        "nw_compression_level": 9,
+        "nw_version": "0.26.6",
+        "output_pattern": "",
+        "sdk_build": true,
+        "uncompressed_folder": false,
+        "whitelist": "",
+        "windows-x32": true,
+        "windows-x64": true
+    }
+}
